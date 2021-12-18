@@ -118,6 +118,30 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* rule block for slide container */
+.slide {
+    width: 100%;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 30px;
+    background: lightcoral;
+    outline: none;
+    opacity: 0.5;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.requirements {
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;

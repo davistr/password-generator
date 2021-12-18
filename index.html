@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -18,6 +18,34 @@
             <div class="card-header">
                 <h2>Generate a Password</h2>
             </div>
+            <div>
+                <h4>Please select desired password length:</h4>
+                <div class="slide">
+                    <input type="range" min="8" max="128" value="8" class="slider" id="Range">
+                    <p>Length: <strong><span id="demo"></span></strong></p>
+                </div>
+                <!--checkbox for upper case-->
+                <div class="requirements">
+                    <input type="checkbox" id="upper" unchecked>
+                    <label for="upper">Upper Case</label>
+                </div>
+                <!--checkbox for lower case-->
+                <div class="requirements">
+                    <input type="checkbox" id="lower" unchecked>
+                    <label for="lower">Lower Case</label>
+                </div>
+                <!--checkbox for numbers case-->
+                <div class="requirements">
+                    <input type="checkbox" id="numbers" unchecked>
+                    <label for="numbers">Numbers (0-9)</label>
+                </div>
+                <!--checkbox for special characters case-->
+                <div class="requirements">
+                    <input type="checkbox" id="special" unchecked>
+                    <label for="special">Special Characters (!@#$%&*)</label>
+                </div>
+
+            </div>
             <div class="card-body">
                 <textarea readonly id="password" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
@@ -27,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
