@@ -8,6 +8,10 @@
 * CSS
 * JavaScript
 
+## Screenshot
+![](images/site_screenshot.JPG)
+
+
 ## Website
 https://davistr.github.io/password-generator/
 

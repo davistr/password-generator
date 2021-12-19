@@ -1,7 +1,8 @@
 // Assignment code here
 
+
 var slider = document.getElementById("Range");
-var output = document.getElementById("demo");
+var output = document.getElementById("slider-val");
 output.innerHTML = slider.value;
 
 //Create variable for password length
@@ -28,7 +29,7 @@ var uppLowNum = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz"
 var uppLowSpec = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*abcdefghijklmnopqrstuvwxyz";
 var uppNumSpec = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
 var lowNumSpec = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%&*";
-var all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&abcdefghijklmnopqrstuvwxyz0123456789";
+var all = "!@#$%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*0123456789abcdefghijklmnopqrstuvwxyz0123456789";
 // Create variables to capture checkbox elements
 var check1 = document.getElementById("upper");
 var check2 = document.getElementById("lower");
@@ -133,7 +134,6 @@ var generatePassword = function () {
             password += upp.charAt(Math.floor(Math.random() * upp.length));
         }
         return password;
-
     }
     else if (check2.checked) {
 
